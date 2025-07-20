@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Me</title>
+</head>
+<body>
+    <header>
+        <aside>
+            <search>
+                <form>
+                    <input name="search" id="search" placeholder="Search My Website"> <button type = "button">Search</button>
+                </form>
+              </search>
+        </aside>
+        <nav>
+            <a href="./index.html">Homepage</a>
+            <a href="./about.html">About Me</a>
+            <a href="./resume.html">Resume</a>
+            <a href="./project.html">Project</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./garden.html">Garden</a>
+        </nav>
+        
+    </header>
+    <main>
+        <section id = "bio">
+            <h1> Who am I?</h1>
+            <p> Hello! My name is Allison Chan and I am a current 4th year student studying Computer Science at UCSD.</p>
+            <aside>
+                <figure>
+                    <img src="./assests/images/professional_pic.jpeg" 
+                        alt="Professional Picture of Me">
+                        <figcaption>Professional Photo</figcaption>
+                </figure>
+            </aside>
+        </section>
+
+        <section id = "favwords">
+            <h3> My Vocabulary</h3>
+            <dl>
+                <dt>
+                    <b>吃醋</b>
+                </dt>
+                <dd> <i><del>jealous</del><ins><em></em> eat vinegar</ins> </i></dd>
+                <dt>
+                    <b>Boba</b>
+                </dt>
+                <dd> <i>a popular tea drink from Taiwan with chewy pearls</i></dd>
+                <dt>
+                    <b>Procrastination</b>
+                </dt>
+                <dd> <i>a habit I am learning to break</i></dd>
+            </dl>
+        </section>
+
+        <section id = "quote">
+            <h3> Motto:</h3>
+            <blockquote>
+                <!-- add a css thingy -->
+                <abbr title="You Only Live Once">YOLO</abbr> 
+                <cite>- Allison 2025 </cite>
+            </blockquote>
+        </section>
+
+        <div id="heart">
+
+                <canvas id="myCanvas" height="200" width="200"></canvas>
+                <script>
+                    const canvas = document.getElementById("myCanvas");
+                    const ctx = canvas.getContext("2d");
+                    ctx.beginPath();
+                        ctx.moveTo(100, 50);
+                        ctx.bezierCurveTo(100, 10, 37.5, 10, 37.5, 50);
+                        ctx.bezierCurveTo(37.5, 90, 100, 150, 100, 150);
+                        ctx.bezierCurveTo(112.5, 140, 162.5, 90, 162.5, 50);
+                        ctx.bezierCurveTo(162.5, 10, 100, 10, 100, 50);
+                    ctx.stroke();
+                    ctx.fill();
+                    ctx.closePath();
+                </script>
+        </div>
+        <div id = "star">
+            <dialog open>
+                <p>Thanks for reading here's a star!</p>
+                <svg width="100" height="100">
+                    <polygon points="50,5, 20,99, 95,39 5,39 80,99"
+                    style="fill:rgb(251, 186, 9);stroke:rgb(251, 186, 9);stroke-width:5;" />
+                  
+                </svg>
+            </dialog>
+        </div>
+ 
+    </main>
+    <footer>
+        <br>
+        <address>
+            Created by <a href="mailto:allybc1124@gmail.com">Allison Chan</a><br> 
+            Last Updated: July 2025<br>
+            Current Status: Doing my best :/ <br>
+            Published through Netlify
+        </address>
+    </footer>
+    
+    
+</body>
+</html>

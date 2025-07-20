@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Allison Chan's Website</title>
+        <!-- script for javascript--> 
+        <style>
+            div {
+                border-color: black;
+                border-style: solid;
+            }
+           
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <aside>
+                <search>
+                    <form>
+                    <input name="search" id="search" placeholder="Search My Website"> <button type = "button">Search</button>
+                    </form>
+                </search>
+            </aside>
+
+
+            <nav>
+                <a href="./index.html">Homepage</a>
+                <a href="./about.html">About Me</a>
+                <a href="./resume.html">Resume</a>
+                <a href="./project.html">Project</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./garden.html">Garden</a>
+            </nav>
+            <script>
+                class Welcome extends HTMLElement {
+                connectedCallback() {
+                    console.log("Welcome to Allison's Webpage");
+                }
+                }
+            
+                customElements.define('welcome-user', Welcome);
+            </script>
+            <welcome-user></welcome-user>
+    
+            <noscript>
+                <!-- can be used in the head a likely used would be an immediate redirect to an error page or a message to the user that they need to enable JavaScript to use the page. Uncomment to demonstrate. -->
+                <!-- <meta http-equiv="refresh" content="0;url=https://example.com/nojs-error."> --> 
+                <p>
+                    Currently JavaScript is unenabled. Enable Javascript for full experience! 
+                    <kbd>Ctrl</kbd> + <kbd>R</kbd> to reload.
+                </p>
+            </noscript>
+            <!-- style is for css-->
+
+        </header>
+        <main>
+            <h1>Allison Chan's Homepage</h1>
+            <section id = "profile-image">
+                <picture>
+                    <!-- Portrait crop for mobile -->
+                    <source media="(max-width: 480px)"
+                            srcset="./assests/images/vertical_me.png">
+                     
+                    <!-- Landscape crop for tablet -->
+                    <source media="(max-width: 768px)"
+                            srcset="./assests/images/horizontal_me.jpeg">
+                    
+                    <!-- Default landscape image -->
+                    <img src="./assests/images/horizontal_me.jpeg" 
+                        alt="Art direction example using picture element"
+                        width="800" 
+                        height="400">
+                </picture>
+                <h3>Me!</h3>
+                <p>Image changes based on device!</p>
+            </section>
+        
+            <!-- need css for aside to work? -->
+                <section id = "intro">
+                    <h2>Welcome to Allison Chan's Homepage, look around to learn more!  </h2>
+                </section>
+
+
+                <!-- <button type="button" onclick="alert('You Clicked ಠ_ಠ ')">Do Not Click!</button> -->
+                <button type = "button">Do Not Click!</button>
+                <br>
+                <br>
+
+                <section id = "equation">
+                    <h3> Einstein's Famous Formula:</h3>
+                    <math>
+                        <mrow>
+                          <mi>E</mi>
+                          <mo>=</mo>
+                          <mi>m</mi>
+                          <msup>
+                            <mi>c</mi>
+                            <mn>2</mn>
+                          </msup>
+                        </mrow>
+                      </math>
+                </section>
+    
+
+        </main>
+        <footer>
+            <br>
+            <address>
+                Created by <a href="mailto:allybc1124@gmail.com">Allison Chan</a><br> 
+                Last Updated: July 2025<br>
+                Current Status: Doing my best :/ <br>
+                Published through Netlify
+            </address>
+        </footer>
+        
+    </body>
+</html>

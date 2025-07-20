@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <aside>
+            <search>
+                <form>
+                    <input name="search" id="search" placeholder="Search My Website"> <button type = "button">Search</button>
+                </form>
+              </search>
+        </aside>
+        <nav>
+            <a href="./index.html">Homepage</a>
+            <a href="./about.html">About Me</a>
+            <a href="./resume.html">Resume</a>
+            <a href="./project.html">Project</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./garden.html">Garden</a>
+        </nav>
+    </header>
+    <main>
+        <section id = "socials">
+            <h3>My Socials</h3>
+            <p>Email: allybc1124@gmail.com</p>
+            <a href="https://www.linkedin.com/in/allison-b-chan/">Linkedin</a>
+        </section>
+        <section id= "forms">
+            <form action = "http://httpbin.org/get" method = "get"> 
+                <fieldset>
+                    <legend><h3>Let Me Get to Know You!</h3></legend>
+                    <label for = "full_name">Full Name: </label>
+                    <input type = "text" name = "full_name" id = "full_name" placeholder = "Name"> 
+
+                    <br>
+                    <label for = "email_field">Email:</label>
+                    <input type = "text" name = "email" id = "email_field" placeholder = "username@email.com">
+            
+                    <br>
+                    <label for="subject">Favorite School Subject</label>
+                    
+                    <select name="subject" id="subject">
+                        <option value = "" hidden>Subjects</option>
+                        <optgroup label = "STEM"> 
+                            <option value = "Math">Math</option>
+                            <option value = "Science">Science</option>
+                            <option value = "Computer Science">Computer Science</option>
+                        </optgroup>
+                        <optgroup label = "Humanities"> 
+                            <option value = "English">English</option>
+                            <option value = "History">History</option>
+                            <option value = "Art">Art</option>
+                        </optgroup>
+                    </select>
+
+                    <br>
+                    <label for ="flavor">Favorite Ice Cream Flavor?</label>
+                    <input list = "flavors" name = "flavor" id = "flavor">
+                    <datalist id = "flavors">
+                        <option value="Vanilla"></option>
+                        <option value="Chocolate"></option>
+                        <option value="Cookies and Cream"></option>
+                        <option value="Strawberry"></option>
+                        <option value="Coconut"></option>
+                        <option value="Unicorn Sparkle"></option>
+                    </datalist>
+                    
+                    <p><label for = "review">Comments, Concerns, Complaints, Jokes:</label></p>
+                    <textarea 
+                        id="review" name="review" rows="4" cols="50" placeholder = "insert here"></textarea>
+                        <br><br>
+                        <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+           
+        </section>
+    </main>
+    <footer>
+        <br>
+        <address>
+            Created by <a href="mailto:allybc1124@gmail.com">Allison Chan</a><br> 
+            Last Updated: July 2025<br>
+            Current Status: Doing my best :/<br>
+            Published through Netlify
+        </address>
+    </footer>
+    
+</body>
+</html>
