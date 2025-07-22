@@ -47,6 +47,31 @@
                 color: var(--text-color);
             }
 
+            .employment-content {
+                display: flex;
+                gap: 3dvw; /* Adjust spacing between the list and iframe */
+                justify-content: space-between;
+               
+            }
+
+            .employment-content ul {
+                flex: 1;
+                list-style-type: "-";
+                margin-left: 3dvw;
+                margin-bottom: 1dvh;
+            }
+
+            .employment-iframe {
+                flex: 1;
+                max-width: 1000%; /* Adjust width of iframe */
+                max-height: 15%;
+            }
+
+            .employment-iframe iframe {
+                width: 100%;
+                height: 50vh; /* Adjust height of iframe */
+                border: 0.25em solid var(--border-color);
+            }
 
         }
 
@@ -84,32 +109,33 @@
             <hr>
         </section>
         
-        <section id = employment>
+        <section id="employment">
             <h2>Employment</h2>
             <h3>CTI-Codeday | Software Engineer Intern</h3>
-            <ul>
-                <li>
-                    <p>Collaborated with mentor and team on <strong>Storybook</strong>, an open source frontend workshop with millions of users, created
-                    for developmentation, testing, and documentation of UI components</p>
-               </li>
-               <li>
-                    <p>Worked on <em>Accessibility Addon </em>blurred border issue due to interaction between CSS method <em>blur()</em> and
-                        <em>box-shadow CSS</em>, enhancing accessibility testing accuracy</p>
-                
-               </li>
-               <li><p>Utilized <em>React</em> functions to modify filter applications of components within iframe without impacting iframe border</p>
-               </li>
-               <li>
-                <code>import React, {useState, useEffect} from 'react'</code>
-               </li>
-            </ul>
-            
-            
-            <p> Blog Post</p>
-            <iframe src="./assests/documents/CTI_Blog.pdf" title="CTI_Blog"></iframe>
+            <div class="employment-content">
+                <ul>
+                    <li>
+                        <p>Collaborated with mentor and team on <strong>Storybook</strong>, an open source frontend workshop with millions of users, created
+                        for developmentation, testing, and documentation of UI components</p>
+                    </li>
+                    <li>
+                        <p>Worked on <em>Accessibility Addon</em> blurred border issue due to interaction between CSS method <em>blur()</em> and
+                            <em>box-shadow CSS</em>, enhancing accessibility testing accuracy</p>
+                    </li>
+                    <li><p>Utilized <em>React</em> functions to modify filter applications of components within iframe without impacting iframe border</p>
+                    </li>
+                    <li>
+                        <code>import React, {useState, useEffect} from 'react'</code>
+                    </li>
+                </ul>
+        
+                <div class="employment-iframe">
+                    <iframe src="./assests/documents/CTI_Blog.pdf" title="CTI_Blog"></iframe>
+                </div>
+            </div>
+        
             <hr>
         </section>
-
         <section id = technical_skills>
             <h3>Technical Skills</h3>
             <p>Programming Languages:</p>

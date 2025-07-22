@@ -84,3 +84,7 @@ header {
         width: 200px; /* Expanded width on hover */
     }
 }
+
+footer {
+    background-color: var(--primary-color);
+}
