@@ -3,53 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assests/styles/main.css">
     <title>Resume</title>
+
+    <style>
+        * {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+        body{
+            main{
+                padding: 2dvh;
+                max-width: 100%;
+            }
+            section {
+                background-color: white;
+                border: 0.25em solid var(--border-color);
+                border-radius: 1dvw;
+                padding: 3dvh;
+                margin-bottom: 3dvh;
+            }
+
+            section h3 {
+                font-family: var(--header-font-stack), serif;
+                color: var(--secondary-color);
+                font-size: 1.5rem;
+                margin-bottom: 1.5dvh;
+            }
+            section p {
+                font-size: 1.25rem;
+                color: var(--secondary-color);
+                margin-bottom: 1dvh;
+            }
+            section ul {
+                list-style-type: "-";
+                margin-left: 3dvw;
+                margin-bottom: 1dvh;
+            }
+            section ul li p{
+                font-size: 1rem;
+                color: var(--text-color);
+            }
+
+
+        }
+
+    </style>
     
 </head>
 <body>
     <header>
-        <aside>
-            <search>
-                <form>
-                    <input name="search" id="search" placeholder="Search My Website"> <button type = "button">Search</button>
-                </form>
-              </search>
-        </aside>
         <nav>
             <a href="./index.html">Homepage</a>
-            <a href="./about.html">About Me</a>
+            <a href="./about.html">AboutMe</a>
             <a href="./resume.html">Resume</a>
             <a href="./project.html">Project</a>
             <a href="./contact.html">Contact</a>
             <a href="./garden.html">Garden</a>
         </nav>
-        <h1>Resume</h1>
+        <aside>
+            <search>
+                <form>
+                    <input name="search" id="search" placeholder="Search My Website"> <button type = "button">Search</button>
+                </form>
+            </search>
+        </aside>
+          
     </header>
     <main>
+        <h1>Resume</h1>
         <section id = education>
-            <h3>Education</h3>
-            <h4>University of California, San Diego</h4>
+            <h2>Education</h2>
+            <h3>University of California, San Diego</h3>
             <p>B.S. Computer Science </p>
 
-            <h4> De Anza College</h4>
+            <h3> De Anza College</h3>
             <p>Associate Degree for Transfer, Computer Science</p>
             <hr>
         </section>
-        <aside>
-            <h3>Downloadables</h3>
-            <ul class = contacts>
-                <li>
-                    <a href="./resumeweb.pdf" target = "_blank">Resume (PDF)</a>
-                </li>
-                <li>
-                    <!-- <a href="./faw.pdf" target = "_blank">Job FAQs</a> -->
-                     <p>Link to Cover Letter</p>
-                </li>
-            </ul>
-        </aside>
+        
         <section id = employment>
-            <h3>Employment</h3>
-            <h4>CTI-Codeday | Software Engineer Intern</h4>
+            <h2>Employment</h2>
+            <h3>CTI-Codeday | Software Engineer Intern</h3>
             <ul>
                 <li>
                     <p>Collaborated with mentor and team on <strong>Storybook</strong>, an open source frontend workshop with millions of users, created
@@ -78,6 +115,20 @@
             <p>Programming Languages:</p>
             <p>Tools:</p>
             <p>Skills:</p>
+        </section>
+        <section id = sidebar>
+            <aside>
+                <h3>Downloadables</h3>
+                <ul class = contacts>
+                    <li>
+                        <a href="./resumeweb.pdf" target = "_blank">Resume (PDF)</a>
+                    </li>
+                    <li>
+                        <!-- <a href="./faw.pdf" target = "_blank">Job FAQs</a> -->
+                        <p>Link to Cover Letter</p>
+                    </li>
+                </ul>
+            </aside>
         </section>
 
         

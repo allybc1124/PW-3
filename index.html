@@ -3,37 +3,80 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./assests/styles/main.css">
         <title>Allison Chan's Website</title>
         <!-- script for javascript--> 
+
         <style>
-            div {
-                border-color: black;
-                border-style: solid;
+             * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
             }
-           
+            main {
+                padding: 2dvh;
+                max-width: 100%;
+            }
+
+        h1, h2 {
+            font-family: var(--header-font-stack), serif;
+            color: var(--text-color);
+            font-size: 2rem;
+
+        }
+
+        section {
+            background-color: white;
+            border: 0.25em solid var(--border-color);
+            border-radius: 1dvw;
+            padding: 3dvh;
+            margin-bottom: 3dvh;
+            box-shadow: 0 0 2dvh rgba(0, 0, 0, 0.1);
+        }
+        #profile-image {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3dvh;
+        }
+
+        #profile-image picture {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #profile-image aside {
+            max-width: 40%;
+            padding: 2dvh;
+        }
+
+        #profile-image aside h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1dvh;
+        }
+
         </style>
 
     </head>
     <body>
         <header>
-            <aside>
-                <search>
-                    <form>
-                    <input name="search" id="search" placeholder="Search My Website"> <button type = "button">Search</button>
-                    </form>
-                </search>
-            </aside>
-
-
+ 
             <nav>
                 <a href="./index.html">Homepage</a>
-                <a href="./about.html">About Me</a>
+                <a href="./about.html">AboutMe</a>
                 <a href="./resume.html">Resume</a>
                 <a href="./project.html">Project</a>
                 <a href="./contact.html">Contact</a>
                 <a href="./garden.html">Garden</a>
             </nav>
+            <aside>
+                <search>
+                    <form>
+                        <input name="search" id="search" placeholder="Search My Website"> <button type = "button">Search</button>
+                    </form>
+                </search>
+            </aside>
+              
+
             <script>
                 class Welcome extends HTMLElement {
                 connectedCallback() {
@@ -53,11 +96,13 @@
                     <kbd>Ctrl</kbd> + <kbd>R</kbd> to reload.
                 </p>
             </noscript>
-            <!-- style is for css-->
 
         </header>
         <main>
             <h1>Allison Chan's Homepage</h1>
+            <section id = "intro">
+                <h2>Welcome to My Homepage, look around to learn more!  </h2>
+            </section>
             <section id = "profile-image">
                 <picture>
                     <!-- Portrait crop for mobile -->
@@ -74,37 +119,21 @@
                         width="800" 
                         height="400">
                 </picture>
-                <h3>Me!</h3>
-                <p>Image changes based on device!</p>
+                <aside>
+                    <h3>Me!</h3>
+                    <p>Image changes based on device!</p>
+                </aside>
+
             </section>
         
-            <!-- need css for aside to work? -->
-                <section id = "intro">
-                    <h2>Welcome to Allison's Homepage, look around to learn more!  </h2>
-                </section>
+            
 
 
-                <!-- <button type="button" onclick="alert('You Clicked ಠ_ಠ ')">Do Not Click!</button> -->
-                <button type = "button">Do Not Click!</button>
-                <br>
-                <br>
-
-                <section id = "equation">
-                    <h3> Einstein's Famous Formula:</h3>
-                    <math>
-                        <mrow>
-                          <mi>E</mi>
-                          <mo>=</mo>
-                          <mi>m</mi>
-                          <msup>
-                            <mi>c</mi>
-                            <mn>2</mn>
-                          </msup>
-                        </mrow>
-                      </math>
-                </section>
-    
-
+                <!-- <button type="button" onclick="alert('You Clicked ಠ_ಠ ')">Do Not Click!</button> 
+            <button type = "button">Do Not Click!</button>
+            <br>
+            <br>
+        -->
         </main>
         <footer>
             <br>
